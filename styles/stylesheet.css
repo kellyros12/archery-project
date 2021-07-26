@@ -1,0 +1,124 @@
+
+h1 {
+    font-family: "Arial-Bold";
+    font-size: 40px;
+}
+
+h2 {
+    font-family: "Arial-Bold";
+    font-size: 24px;
+}
+
+h3 {
+    font-family: "Arial-Bold";
+    font-size: 17px;
+}
+
+p {
+    font-family: "Arial";
+    font-size: 17px;
+}
+
+.grid-container {
+    display: grid;
+    width: auto;
+    grid-template-columns: 10% 10% 20% 20% 20% 10% 10%;
+    grid-template-rows: 25% 50% 25%;
+}
+
+.grid-container-2 {
+    display: grid;
+    width: auto;
+    grid-template-columns: 10% 10% 20% 20% 20% 10% 10%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: rgb(3, 163, 223);
+}
+
+.grid-container-3 {
+    display: grid;
+    width: auto;
+    grid-template-columns: 10% 10% 20% 20% 20% 10% 10%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+img {
+    grid-column: 4 / span 1;
+    grid-row: 1 / 5;
+    justify-self: center;
+}
+
+nav {
+    grid-column: 6 / span 1;
+    grid-row: 5 / 6;
+    justify-self: center;
+    align-self: center;
+}
+
+img.instructor {
+    grid-column: 4 / 5;
+    justify-self: center;
+}
+
+section {
+    grid-column: 3 / span 3;
+}
+
+.quote {
+    font-family: "Arial-Regular";
+    font-size: 30px;
+    grid-column: 5 / span 1;
+    color: #03a3df;
+}
+
+a:active {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:link {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    font-weight: bold;
+    text-direction: none;
+}
+
+.footer-image {
+    grid-column: 1 / 8;
+    grid-row: 1 / span 4;
+    justify-self: center;
+}
+
+.footer-logo {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    justify-self: center;
+    grid-row: 2 / 3;
+    z-index: 1;
+}
+
+footer > p {
+    grid-column: 3 / span 4;
+    grid-row: 3 / span 2;
+    z-index: 1;
+    color: white;
+}
