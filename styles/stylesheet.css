@@ -21,38 +21,70 @@ p {
 
 .grid-container {
     display: grid;
-    width: auto;
-    grid-template-columns: 10% 10% 20% 20% 20% 10% 10%;
-    grid-template-rows: 25% 50% 25%;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 2fr 2fr 2fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
 }
 
 .grid-container-2 {
     display: grid;
-    width: auto;
-    grid-template-columns: 10% 10% 20% 20% 20% 10% 10%;
-    grid-template-rows: 20% 20% 20% 20% 20%;
-    grid-column-start: 2;
+    width: 100vw;
+    height: 30vh;
+    grid-template-columns: 1fr 1fr 2fr 2fr 2fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr 2fr 2fr 2fr;
+    grid-column-start: 1;
     grid-column-end: 7;
     grid-row-start: 1;
-    grid-row-end: 3;
+    grid-row-end: 2;
     background-color: rgb(3, 163, 223);
 }
 
 .grid-container-3 {
     display: grid;
-    width: auto;
-    grid-template-columns: 10% 10% 20% 20% 20% 10% 10%;
-    grid-template-rows: 25% 25% 25% 25%;
+    width: 100vw;
+    height: auto;
+    grid-template-columns: 1fr 1fr 2fr 2fr 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-column-start: 1;
     grid-column-end: 8;
-    grid-row-start: 4;
-    grid-row-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: rgb(3, 163, 223);
+}
+
+.instructors {
+    display: grid;
+    width: 75vw;
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.instructor-1 {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+}
+
+.instructor-2 {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+}
+
+.instructor-3 {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+}
+
+.instructor-4 {
+    grid-column: 2 / 4;
+    grid-row: 4 / 5;
 }
 
 img {
     grid-column: 4 / span 1;
     grid-row: 1 / 5;
-    justify-self: center;
+    align-self: center;
 }
 
 nav {
@@ -60,21 +92,21 @@ nav {
     grid-row: 5 / 6;
     justify-self: center;
     align-self: center;
-}
-
-img.instructor {
-    grid-column: 4 / 5;
-    justify-self: center;
+    color: white;
 }
 
 section {
     grid-column: 3 / span 3;
+    grid-row: 2 / 3;
 }
 
-.quote {
+aside {
     font-family: "Arial-Regular";
     font-size: 30px;
-    grid-column: 5 / span 1;
+    grid-column: 6 / 8;
+    grid-row: 2 / 3;
+    justify-self: center;
+    align-self: center;
     color: #03a3df;
 }
 
@@ -99,7 +131,7 @@ a:hover {
 a:visited {
     color: white;
     font-weight: bold;
-    text-direction: none;
+    text-decoration: none;
 }
 
 .footer-image {
